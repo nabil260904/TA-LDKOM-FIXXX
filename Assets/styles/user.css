@@ -1,0 +1,330 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+header {
+  background-color: transparent; /* Mengubah warna latar belakang menjadi transparan */
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); /* RGBA untuk menentukan opacity */
+}
+
+.navbar__logo img {
+  height: 60px; /* Sesuaikan dengan kebutuhan */
+}
+
+.navbar_menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 40px;
+}
+
+.navbar_menu a:hover {
+  text-decoration: underline;
+}
+
+.jumbotron {
+  background-image: url("../image/moneyexchange.jpg"); /* Ganti dengan path gambar Anda */
+  background-size: cover;
+  background-position: center;
+  height: 800px; /* Sesuaikan dengan kebutuhan */
+  position: relative;
+  z-index: -1; /* Mengatur z-index agar berada di belakang navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+#tukar {
+  padding-top: 20px;
+}
+.layer {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.jumbotron__content {
+  text-align: center;
+  color: #fff;
+}
+
+.jumbotron__content h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.jumbotron__content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.main-content {
+  height: 130vh;
+  background-color: #f4f7f9;
+}
+.main-content h1 {
+  margin-top: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+.card-container {
+  display: flex;
+  justify-content: center; /* Menyebarkan kartu secara merata dalam wadah */
+}
+
+.card {
+  width: 200px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 35px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.desk {
+  margin-left: 20px;
+}
+.penukaran {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  font-family: "Poppins";
+}
+
+#total {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+#exchangeForm button {
+  width: 30%;
+  margin: 10px 35%;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Poppins";
+  background-color: #91d044;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#exchangeForm button:hover {
+  background-color: #519b23;
+}
+.form {
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  border-radius: 15px;
+}
+header {
+  color: #000;
+}
+footer {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+footer h3 {
+  font-weight: 600;
+  font-size: 15px;
+}
+.about img {
+  width: 70px;
+}
+.about p {
+  font-size: 10px;
+  font-weight: 200;
+}
+.sosmed {
+  display: flex;
+  justify-content: start;
+}
+.sosmed i {
+  font-size: 14px;
+  margin: 5px;
+  color: #ef1170;
+}
+.rounded {
+  height: 21px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.about {
+  width: 200px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.rounded:hover {
+  background-color: #fe6506;
+}
+.sosmed i:hover {
+  color: #fff;
+}
+.kelebihan {
+  width: auto;
+  margin-bottom: 65px;
+}
+.kelebihan h3,
+li {
+  color: #fff;
+}
+.kelebihan li {
+  font-size: 10px;
+  font-weight: 200;
+}
+.copy {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  bottom: 0%;
+  font-size: 10px;
+  padding-bottom: 5px;
+}
+
+.bg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg img {
+  width: 100%;
+  opacity: 40%;
+}
+.table-on-image {
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+  padding: 10px;
+  margin-top: 100px;
+}
+.bg h1 {
+  color: #000;
+  position: absolute;
+  top: 15%;
+}
+.table-on-image td,
+th {
+  padding: 10px;
+  border: 2px solid black;
+}
+#openBtn {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  border: none;
+  font-family: "Poppins";
+  background-image: linear-gradient(to right, #519b23, #91d044);
+  color: #fff;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+#openBtn:hover {
+  cursor: pointer;
+  transform: scale(1.1); /* Increase the scale by 10% */
+}
+#deleteBtn {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  margin-left: 5px;
+  padding-right: 10px;
+  border-radius: 20px;
+  border: none;
+  font-family: "Poppins";
+  background-image: linear-gradient(to right, #ef1170, #fe6506);
+  color: #fff;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+#deleteBtn:hover {
+  cursor: pointer;
+  transform: scale(1.1); /* Increase the scale by 10% */
+}
+form {
+  background-color: transparent;
+}

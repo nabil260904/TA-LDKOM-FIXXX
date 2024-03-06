@@ -1,0 +1,8 @@
+body {
+  background-image: url(../image/bg.jpg);
+  background-size: cover;
+}
+thead {
+  background-color: #519b23;
+  color: #fff;
+}
