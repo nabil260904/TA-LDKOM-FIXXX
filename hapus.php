@@ -10,10 +10,11 @@ if(isset($_POST['id_penukaran'])) {
     $delete_result = $conn->query($delete_query);
 
     if($delete_result) {
-        header("Location: riwayat.php");
-        exit(); 
+        // Tulis pesan log
+        file_put_contents('log.txt', 'ID Penukaran yang dihapus: ' . $id_penukaran . PHP_EOL, FILE_APPEND);
+        echo "Data penukaran dengan ID $id_penukaran telah dihapus.";
     } else {
         echo "Gagal menghapus data";
     }
 }
-?>
+
